@@ -1,0 +1,655 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*NAVIGATION & HEADER*/
+
+div.account {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	align-items: center;
+	align-content: center;
+	width: 100%;
+	height: 80px;
+	box-shadow: 0 2px 5px black;
+	background-color: blue;
+	box-sizing: border-box;
+	padding: 0 15px;
+}
+
+div.account img {
+	height: 80%;
+	cursor: pointer;
+}
+
+div.account h1.logo {
+	text-shadow: -2px 2px 5px black;
+	font-family: "Apple Chancery", "times new roman", arial, cursive;
+	color: white;
+	line-height: 70px;
+	font-size: 50px;
+}
+
+div.account h1.logo span {
+	font-weight: 10;
+}
+
+div.account p.akun {
+	font-family: "Montserrat", "times new roman", arial, serif;
+	color: white;
+	line-height: 75px;
+	padding-right: 5%;
+	font-size: 20px;
+	display: flex;
+}
+
+div.account div {
+	display: flex;
+	/*margin-right: 5%;*/
+	align-items: center;
+}
+
+div.account div button {
+	width: auto;
+	padding: 10px;
+	height: 50px;
+	margin-right: 10px;
+	border-radius: 5px;
+	background-color: white;
+	font-family: "Montserrat", sans-serif;
+	border: none;
+	font-weight: bolder;
+	cursor: pointer;
+	color: blue;
+}
+
+div.account div button i {
+	font-size: 20px;
+}
+
+div.account div button#gambarUser {
+	display: none;
+}
+
+div.account div button:hover {
+	opacity: .8;
+}
+
+div.account div button.akun {
+	background-color: white;
+	padding: 10px;
+	width: auto;
+	margin-right: 4%;
+}
+
+nav.dua {
+	display: none;
+}
+
+nav {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: blue;
+	color: white;
+	box-shadow: 0px 2px 5px black;
+	width: 50%;
+	height: 80px;
+	align-items: center;
+	align-content: center;
+	top: 0;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	position: sticky;
+	z-index: 10000;
+	/*border-bottom: 2px solid white;
+	border-left: 2px solid white;
+	border-right: 2px solid white;*/
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	font-family: "Montserrat", arial, cursive;
+	font-weight: bolder;
+	text-shadow: 0px 2px 5px black;
+}
+
+nav p {
+	color: white;
+	font-family: "Montserrat", arial, cursive;
+	font-weight: bolder;
+	text-shadow: 0px 2px 5px black;
+	cursor: pointer;
+}
+
+nav p i {
+	font-size: 30px;
+	padding: 5px 0;
+	border-bottom: 2px solid white;
+}
+
+nav a i {
+	font-size: 30px;
+}
+
+nav a:hover {
+	opacity: .5;
+}
+
+nav div input {
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	font-family: "Arial", montserrat, cursive;
+	padding: 7px;
+}
+
+nav div button {
+	border-radius: 5px;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}
+
+nav div button i {
+	padding: 8px;
+}
+
+@media (max-width: 1100px) {
+
+	div.account {
+		display: flex;
+		justify-content: space-evenly;
+		position: relative;
+		top: 0;
+		padding: 0;
+	}
+
+	nav {
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		background-color: blue;
+		color: white;
+		box-shadow: 0px 2px 5px black;
+		width: 70%;
+		height: 70px;
+		top: 85%;
+		align-items: center;
+		align-content: center;
+		border-top-right-radius: 25px;
+		border-top-left-radius: 25px;
+		position: sticky;
+		z-index: 1000;
+	}
+
+}
+
+@media(max-width: 800px) {
+
+	div.account {
+		padding: 0;
+	}
+
+	nav {
+		width: 95%;
+	}
+
+}
+
+@media(max-width: 570px) {
+
+	nav {
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		background-color: blue;
+		color: white;
+		box-shadow: 0px 0px 5px black;
+		width: 100%;
+		height: 70px;
+		top: 0;
+		align-items: center;
+		align-content: center;
+		border-radius: 0;
+		position: sticky;
+		z-index: 10000;
+	}
+
+	div.account {
+		box-shadow: 0px 0px 0px white;
+		border-bottom: 2px solid navy;
+		padding: 0;
+	}
+
+	div.account form button {
+		width: auto;
+		padding: 10px;
+		align-content: center;
+		align-items: center;
+	}
+
+}
+
+@media(max-width: 500px) {
+
+	div.account form button {
+		background-color: white;
+		padding: 10px;
+		width: auto;
+		height: 100%;
+		margin: 4%;
+		font-size: 12px;
+	}
+
+	div.account h1.logo {
+		text-shadow: -2px 2px 5px black;
+		font-family: "Apple Chancery", "times new roman", arial, cursive;
+		color: white;
+		line-height: 70px;
+		font-size: 40px;
+	}
+
+	div.account form {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		width: 50%;
+		box-sizing: border-box;
+	}
+
+	nav div {
+		display: none;
+	}
+
+}
+
+@media(max-width: 410px) {
+
+	div.account form button#tulisanUser {
+		display: none;
+	}
+
+	div.account form button#gambarUser {
+		display: block;
+		width: 50px;
+		height: 50px;
+		padding: 5px;
+		align-items: center;
+		align-content: center;
+		border-radius: 50%;
+		box-sizing: border-box;
+		overflow: hidden;
+		text-align: center;
+	}
+
+	div.account form button#gambarUser i {
+		font-size: 30px;
+	}
+
+}
+
+@media(max-width: 360px) {
+
+	div.account h1.logo {
+		text-shadow: -2px 2px 5px black;
+		font-family: "Apple Chancery", "times new roman", arial, cursive;
+		color: white;
+		line-height: 70px;
+		font-size: 30px;
+	}
+
+}
+
+/*DETAIL BUKU*/
+
+div.detBuku {
+	box-sizing: border-box;
+	width: 95%;
+	height: auto;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+div.detBuku div.detailBuku {
+	width: 100%;
+	height: auto;
+	background-color: white;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	font-family: "Montserrat", arial, sans-serif;
+}
+
+div.detBuku div.detailBuku div.coverBuku img.sorotan {
+	width: 300px;
+	height: 450px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0px 0px 15px gray;
+}
+
+div.detBuku div.detailBuku div.deskripsi {
+	height: auto;
+	color: navy;
+	width: 100%;
+	padding-left: 40px;
+	box-sizing: border-box;
+}
+
+div.detBuku div.detailBuku div.deskripsi h1 {
+	padding: 0 0 30px 0;
+}
+
+div.detBuku div.detailBuku div.deskripsi h3 {
+	padding: 5px 0;
+}
+
+div.detBuku div.detailBuku div.deskripsi p {
+	text-align: left;
+	margin: 30px 0;
+	line-height: 25px;
+	font-family: "Montserrat", sans-serif;
+}
+
+div.detBuku div.detailBuku div.deskripsi p.link {
+	width: 100%;
+	color: white;
+	background-color: navy;
+	padding: 20px 0;
+	border-radius: 10px;
+	font-weight: bolder;
+	cursor: pointer;
+	text-align: center;
+	transition: .1s;
+	position: relative;
+	outline: none;
+	border: none;
+	font-size: 25px;
+}
+
+div.detBuku div.detailBuku div.deskripsi p.link:hover {
+	opacity: .8;
+}
+
+div.detBuku div.detailBuku div.deskripsi p.link:active {
+	transform: scale(.9);
+}
+
+@media(max-width: 1100px) {
+
+	div.detBuku {
+		box-sizing: border-box;
+		width: 95%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0 0 50px 0;
+	}
+
+}
+
+@media(max-width: 900px) {
+
+	div.detBuku div.detailBuku div.coverBuku img.sorotan {
+		width: 200px;
+		height: 300px;
+	}
+
+}
+
+@media(max-width: 800px) {
+
+	div.detBuku div.detailBuku {
+		flex-direction: column;
+	}
+
+	div.detBuku div.detailBuku div.coverBuku {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	div.detBuku div.detailBuku div.coverBuku img.sorotan {
+		width: 300px;
+		height: 450px;
+	}
+
+	div.detBuku div.detailBuku div.deskripsi {
+		padding: 20px;
+	}
+
+}
+
+@media(max-width: 570px) {
+
+	div.detBuku {
+		margin-top: 50px;
+	}
+
+}
+
+@media(max-width: 400px) {
+
+	div.detBuku div.detailBuku div.coverBuku img.sorotan {
+		width: 200px;
+		height: 300px;
+	}
+
+}
+
+/*PERPUSTAKAAN*/
+
+div.perpustakaan {
+	box-shadow: 0px 0px 20px gray;
+	background-color: cornflowerblue;
+	z-index: 10000;
+	padding: 30px 0;
+}
+
+div.perpustakaan div.buku {
+	width: 100%;
+	padding: 50px 0;
+	background-color: cornflowerblue;
+}
+
+div.perpustakaan div.buku h2 {
+	font-family: "Montserrat", Arial, serif;
+	color: white;
+	font-size: 40px;
+	font-weight: bolder;
+	margin: 0 0 15px 15px;
+	text-shadow: 2px 2px 5px black;
+	text-align: center;
+}
+
+div.perpustakaan div.buku div.daftarIsi {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	align-items: center;
+	align-content: center;
+}
+
+/*div.perpustakaan div.buku div.daftarIsi button {
+	width: 100%;
+	padding: 10px;
+	background-color: transparent;
+	font-size: 30px;
+	text-align: center;
+}*/
+.left-arrow {
+	position: absolute;
+	left: 20px;
+	font-size: 40px;
+	padding: 20px;
+	background-color: navy;
+	color: white;
+	z-index: 20;
+	cursor: pointer;
+	border-radius: 15px;
+	box-shadow: 0px 0px 20px white;
+	transition: .1s;
+}
+
+.right-arrow {
+	position: absolute;
+	right: 20px;
+	font-size: 40px;
+	padding: 20px;
+	background-color: navy;
+	color: white;
+	z-index: 20;
+	cursor: pointer;
+	border-radius: 15px;
+	box-shadow: 0px 0px 20px white;
+	transition: .1s;
+}
+
+.left-arrow:active, .right-arrow:active {
+	transform: scale(.9);
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: space-evenly;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.slick-dots li::marker {
+	cursor: pointer;
+}
+
+.slick-dots li button {
+	display: none;
+}
+
+div.perpustakaan div.buku div.daftarIsi a {
+	width: auto;
+	height: auto;
+	text-align: center;
+	padding: 20px 10px;
+	text-decoration: none;
+}
+
+div.perpustakaan div.buku div.daftarIsi a img {
+	width: 200px;
+	height: 300px;
+	transition: .3s;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px black;
+	margin: 0 auto 15px auto;
+}
+
+div.perpustakaan div.buku div.daftarIsi a img:hover {
+	opacity: .8;
+}
+
+div.perpustakaan div.buku div.daftarIsi a p {
+	color: navy;
+	box-shadow: 0px 0px 15px black;
+	border-radius: 5px;
+	text-align: center;
+	background-color: white;
+	margin: 0;
+	text-decoration: none;
+	padding: 10px 0;
+	font-family: "Lato", sans-serif;
+	font-weight: bolder;
+	overflow: hidden;
+}
+
+@media(max-width: 1100px) {
+
+	div.perpustakaan {
+		padding: 30px 0;
+	}
+
+	div.perpustakaan div.buku {
+		margin: 0;
+		padding: 20px 0;
+	}
+
+}
+
+@media(max-width: 800px) {
+
+	div.perpustakaan div.buku div.daftarIsi a img {
+		width: 100px;
+		height: 150px;
+	}
+
+	div.perpustakaan div.buku div.daftarIsi a p {
+		padding: 5px;
+		font-size: 12px;
+	}
+
+}
+
+@media(max-width: 680px) {
+
+	div.perpustakaan div.buku div.daftarIsi a img {
+		width: 100%;
+		height: auto;
+	}
+
+}
+
+@media(max-width: 570px) {
+
+	div.perpustakaan div.buku div.daftarIsi a p {
+		padding: 5px;
+		font-size: 10px;
+	}
+
+}
+
+/*FOOTER*/
+
+div.footer {
+	width: 100%;
+	height: auto;
+	background-color: darkblue;
+	color: white;
+	z-index: 10000;
+	position: relative;
+}
+
+div.footer div.contact {
+	height: 150px;
+	width: 100%;
+	align-content: center;
+	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+}
+
+div.footer div.contact a {
+	text-decoration: none;
+	border-radius: 20px;
+	color: white;
+}
+
+div.footer div.contact a i {
+	font-size: 50px;
+	transition: .1s;
+	text-shadow: 3px 3px 5px black;
+}
+
+div.footer div.contact a i:hover {
+	font-size: 100px;
+}
+
+div.footer p {
+	font-size: 12px;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #1f104f;
+	box-shadow: 0px -2px 5px midnightblue;
+	font-family: "arial", cursive;
+	letter-spacing: 1px;
+}

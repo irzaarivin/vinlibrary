@@ -1,0 +1,167 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 100%;
+	background-color: #2C2C2E;
+}
+
+#cf-context {
+	width: 100%;
+	height: 85%;
+	position: fixed;
+	bottom: 0;
+}
+
+div.inputWrapper input {
+	border-radius: 10px;
+}
+
+hr {
+	width: 95%;
+	margin: 0 auto;
+}
+
+/*HEADER*/
+
+div.header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	margin: 0 auto;
+	font-family: "Lato", sans-serif;
+	text-align: center;
+	padding: 15px 0 20px 0;
+	background-color: #1C1C1E;
+	color: #FFF;
+	z-index: 1000000;
+	box-sizing: border-box;
+	height: 15%;
+}
+
+div.header h1 {
+	margin-bottom: 10px;
+}
+
+div.header p {
+	font-size: 20px;
+	font-style: italic;
+}
+
+@media(max-width: 800px) {
+
+	div.header {
+		text-align: left;
+		padding-left: 10px;
+	}
+
+	div.header p {
+		font-size: 18px;
+	}
+}
+
+@media(max-width: 600px) {
+
+	div.header p {
+		font-size: 15px;
+	}
+
+}
+
+/*FORMMULIR*/
+
+form#form {
+	width: 95%;
+	margin: 30px auto;
+	background-color: #3A3A3C;
+	padding: 15px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 15px black;
+	box-sizing: border-box;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+form#form fieldset {
+	margin: 30px 0;
+	padding: 15px;
+	border-radius: 15px;
+	display: flex;
+	justify-content: space-evenly;
+	border: 2px solid white;
+}
+
+form#form fieldset legend {
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #1C1C1E;
+	border: 2px solid white;
+}
+
+form#form input, form#form textarea {
+	width: 100%;
+	font-size: 20px;
+	background-color: transparent;
+	color: white;
+	outline: none;
+	border: none;
+	padding-bottom: 10px;
+	border-bottom: 2px solid white;
+	cursor: pointer;
+	font-family: "Montserrat", sans-serif;
+	resize: vertical;
+}
+
+form#form fieldset div.box {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+form#form button {
+	padding: 20px 0;
+	font-size: 25px;
+	outline: none;
+	border-radius: 15px;
+	border: none;
+	margin: 15px auto;
+	width: 100%;
+	background-color: #1C1C1E;
+	color: white;
+	transition: .1s;
+	box-shadow: 0px 0px 10px white;
+	cursor: pointer;
+}
+
+form#form button:active {
+	transform: scale(.9);
+}
+
+@media(max-width: 400px) {
+
+	form#form input, form#form textarea {
+		font-size: 15px;
+		padding-bottom: 2px;
+	}
+
+}
+
+/*CLOSE FEEDBACK*/
+
+div.complete {
+	width: 300px;
+	height: auto;
+	padding: 15px;
+	margin: 0 auto;
+	position: fixed;
+	top: 30%;
+	bottom: 30%;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px white;
+	color: white;
+}

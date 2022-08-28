@@ -1,0 +1,373 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+/*MENU USER*/
+
+div.menu {
+	left: 0;
+	position: fixed;
+	width: 280px;
+	height: 100%;
+	text-align: center;
+	border-right: 2px solid navy;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+div.menu div.kembali {
+	text-align: center;
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background-color: navy;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+div.menu div.kembali a {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	background-color: navy;
+	font-family: "Montserrat", serif;
+	padding: 50px 90px;
+}
+
+div.menu div.kembali a:hover {
+	opacity: .8;
+}
+
+div.menu div.user {
+	width: 100%;
+	text-align: center;
+}
+
+div.menu div.user img {
+	display: none;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+div.menu div.user i {
+	font-size: 150px;
+	color: navy;
+	margin-bottom: 10px;
+}
+
+div.menu div.user h3 {
+	font-family: "Montserrat", serif;
+	color: navy;
+	font-weight: bolder;
+}
+
+div.menu form {
+	width: 100%;
+}
+
+div.menu form button {
+	width: 100%;
+	padding: 20px;
+	color: navy;
+	border: none;
+	background-color: white;
+	border-top: 2px solid navy;
+	border-bottom: 2px solid navy;
+	outline: none;
+	cursor: pointer;
+	font-family: "Montserrat", serif;
+}
+
+div.menu form button:hover {
+	background-color: navy;
+	color: white;
+}
+
+div.menu form button:active {
+	opacity: .8;
+}
+
+div.menu div.logout {
+	width: 100%;
+	text-align: center;
+	height: 80px;
+	line-height: 80px;
+	background-color: navy;
+	color: white;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+div.menu div.logout a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	padding: 50px 90px;
+	font-family: "Montserrat", serif;
+}
+
+div.menu div.logout a:hover {
+	opacity: .8;
+}
+
+/*ISI MENU USER*/
+
+div.datadiri,
+div.dashboard,
+div.ubahPassword,
+div.editDatadiri {
+	width: 80%;
+	height: auto;
+	margin: 0 0 0 20%;
+}
+
+div.datadiri div.hello,
+div.dashboard div.hello,
+div.ubahPassword div.hello,
+div.editDatadiri div.hello {
+	width: 100%;
+	height: 80px;
+	background-color: navy;
+	line-height: 80px;
+	color: white;
+	position: fixed;
+}
+
+div.datadiri div.hello h1, 
+div.dashboard div.hello h1,
+div.ubahPassword div.hello h1,
+div.editDatadiri div.hello h1 {
+	padding-left: 5%;
+	font-family: "Montserrat", serif;
+}
+
+div.dashboard div.mennu,
+div.datadiri div.mennu,
+div.ubahPassword div.mennu,
+div.editDatadiri div.mennu {
+	width: 90%;
+	margin: 0 auto 0 auto;
+	border-radius: 10px;
+}
+
+/*DASHBOARD*/
+
+div.dashboard div.mennu div.nol {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 20px;
+}
+
+div.dashboard div.mennu div.nol img {
+	width: 39%;
+}
+
+div.dashboard div.mennu div.satu {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin: -130px auto 0 auto;
+}
+
+div.dashboard div.mennu a {
+	font-weight: bold;
+	text-align: center;
+	width: 40%;
+	padding: 20px 0;
+	border-radius: 5px;
+	color: navy;
+	border: 3px solid navy;
+	text-decoration: none;
+	font-family: "Montserrat", serif;
+}
+
+div.dashboard div.mennu a:hover {
+	background-color: navy;
+	color: white;
+}
+
+div.dashboard div.mennu div.dua {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin: 50px auto 0 auto;
+}
+
+/*DATADIRI*/
+
+div.datadiri div.mennu {
+	margin-top: 120px;
+	font-family: "Montserrat", serif;
+}
+
+div.datadiri div.mennu h1 {
+	color: navy;
+	margin-bottom: 50px;
+}
+
+div.datadiri div.mennu div.isinya {
+	width: 90%;
+	margin: 100px auto 100px auto;
+}
+
+div.datadiri div.mennu div.isinya div.parSatu {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 50px 0;
+}
+
+div.datadiri div.mennu div.isinya div.parDua {
+	display: flex;
+	justify-content: space-around;
+}
+
+div.datadiri div.mennu div.isinya h3 {
+	color: navy;
+	padding: 10px 0;
+}
+
+div.datadiri div.mennu form button {
+	width: 100%;
+	padding: 40px;
+	background-color: navy;
+	border-radius: 5px;
+	border: 2px solid navy;
+	outline: none;
+	font-family: "Montserrat", sans-serif;
+	color: white;
+	cursor: pointer;
+	transition: .1s;
+}
+
+div.datadiri div.mennu form button:hover {
+	opacity: .8;
+}
+
+div.datadiri div.mennu form button:active {
+	transform: scale(0.9);
+}
+
+/*EDIT DATADIRI*/
+
+div.editDatadiri div.mennu {
+	margin-top: 120px;
+	font-family: "Montserrat", serif;
+}
+
+div.editDatadiri div.mennu h1 {
+	color: navy;
+	margin-bottom: 50px;
+}
+
+div.editDatadiri div.mennu p {
+	margin: 50px 0 100px 0;
+	color: navy;
+}
+
+div.editDatadiri div.mennu div.nama {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 125px 0;
+}
+
+div.editDatadiri div.mennu form button {
+	width: 100%;
+	padding: 30px;
+	border-radius: 5px;
+	background-color: navy;
+	color: white;
+	border: 2px solid navy;
+	outline: none;
+	font-family: "Montserrat", sans-serif;
+	cursor: pointer;
+	transition: .1s;
+}
+
+div.editDatadiri div.mennu form button:hover {
+	opacity: .8;
+}
+
+div.editDatadiri div.mennu form button:active {
+	transform: scale(0.9);
+}
+
+div.editDatadiri div.mennu form label {
+	color: navy;
+}
+
+div.editDatadiri div.mennu form input {
+	font-size: 20px;
+	padding: 5px;
+	padding-top: 15px;
+	border: none;
+	border-bottom: 2px solid navy;
+	border-radius: 0;
+	outline: none;
+	width: 100%;
+}
+
+/*UBAH PASSWORD*/
+
+div.ubahPassword div.mennu {
+	margin-top: 120px;
+	font-family: "Montserrat", serif;
+}
+
+div.ubahPassword div.mennu form {
+	margin: 100px auto 0 auto;
+}
+
+div.ubahPassword div.mennu form div.ubah {
+	margin: 250px auto 200px auto;
+}
+
+div.ubahPassword div.mennu form table {
+	border: none;
+	width: 80%;
+	margin: 0 auto;
+}
+
+div.ubahPassword div.mennu form table tr td label {
+	color: navy;
+}
+
+div.ubahPassword div.mennu form table tr td input {
+	outline: none;
+	border: none;
+	border-bottom: 1px solid navy;
+	width: 300px;
+	padding: 5px;
+}
+
+div.ubahPassword div.mennu form button {
+	width: 100%;
+	padding: 30px;
+	background-color: navy;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	transition: .1s;
+	cursor: pointer;
+}
+
+div.ubahPassword div.mennu form button:hover {
+	opacity: .8;
+}
+
+div.ubahPassword div.mennu form button:active {
+	transform: scale(0.9);
+}
